@@ -3,7 +3,7 @@ class Zombie {
         this.x = 0
         this.y = 0
         this.isAlive = true
-        this.speed = 5
+        this.speed = 0.5
         this.direction = false;
     }
 
@@ -17,12 +17,9 @@ class Zombie {
         this.y += this.speed
     }
 
-    clear() {
+    print() {
         ctx.clearRect(this.x, this.y, this.width, this.height)
-    }
-
-    update() {
-        this.clear()
+        this.move()
         this.draw()
     }
 }
