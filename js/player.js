@@ -48,7 +48,7 @@ class Player {
                     this.y += this.speed;
                 }
                 break;
-            }
+        }
             /*
             case 37 + 38:
             //Diagonals
@@ -85,6 +85,10 @@ class Player {
                 break;
             }
             */
-      }
+    }
+
+    clear() {
+        ctx.clearRect(this.x, this.y, this.width, this.height)
+    }
 
 }
